@@ -45,11 +45,13 @@ export default function TextForm(props) {
       <h1>{props.heading}</h1>
         <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
     </div>
+    <div className="container flex justify-center">
     <button className="btn btn-primary" onClick={handleUpperCaseClick}>convert to uppercase</button>
-    <button className="btn btn-primary mx-2" onClick={handlelowerCaseClick}>convert to lowercase</button>
-    <button className="btn btn-primary mx-2" onClick={handleClearCaseClick}>Clear Text</button>
-    <button className="btn btn-primary mx-2" onClick={reversed}>Reverse Text</button>
-    <button className="btn btn-primary mx-2" onClick={speak}>Speak Text</button>
+    <button className="btn btn-primary mx-1 my-2" onClick={handlelowerCaseClick}>convert to lowercase</button>
+    <button className="btn btn-primary  my-2" onClick={handleClearCaseClick}>Clear Text</button>
+    <button className="btn btn-primary mx-1 my-2" onClick={reversed}>Reverse Text</button>
+    <button className="btn btn-primary " onClick={speak}>Speak Text</button>
+    </div>
     </div>
     <div className="container my-3 ">
       <h2>Your text summary</h2>
